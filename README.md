@@ -18,7 +18,9 @@ A powerful AI-based music composition tool featuring a robust FastAPI backend an
 
 ## 🚀 Demo
 
-*(Add a screenshot of your new UI here)*
+<p align="center">
+   <img src="assets/demo.gif" alt="Music Generator Demo" width="800">
+</p>
 
 ## 🛠️ Tech Stack
 
@@ -41,7 +43,7 @@ cd backend
 # Using uv (recommended)
 uv sync
 # Or using pip
-pip install -r requirements.txt
+pip install .
 ```
 
 ### 3. Frontend Setup
@@ -80,15 +82,25 @@ Music-Generator/
 ├── backend/             # FastAPI Backend
 │   ├── data/            # Training datasets
 │   ├── src/             # Core logic (model, train, generate)
+│   ├── notebooks/       # Jupyter notebook for exploring datasets
+│   ├── outputs/         # Saved models & generations
 │   ├── main.py          # Entry point
-│   └── outputs/         # Saved models & generations
+│   ├── pyproject.toml   # Project configuration
+│   └── uv.lock          # Dependency lock file
 ├── frontend/            # Next.js Frontend (React 19)
 │   ├── app/             # Next.js App Router
 │   ├── components/      # UI Components
+│   ├── hooks/           # Custom React Hooks
+│   ├── lib/             # Utility functions
 │   └── public/          # Static assets
-├── neon-muse-ai/        # Legacy Vite Frontend (Deprecated)
 └── README.md            # Root documentation
 ```
+
+## 🌍 Deployment
+
+- **Backend API**: https://itxmjr-musicgen-api.hf.space/
+- **Frontend**: https://mymusicgen.vercel.app/
+
 ## 🤝 Contributing
 
 Contributions are welcome!
